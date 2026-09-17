@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 - 杉达计科大二</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 24px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 40px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .info-item {
+            padding: 12px 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .info-label {
+            font-size: 13px;
+            color: #95a5a6;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 15px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .interest-list {
+            list-style: none;
+        }
+
+        .interest-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .interest-list li:last-child {
+            border-bottom: none;
+        }
+
+        .interest-list .icon {
+            margin-right: 10px;
+        }
+
+        .intro-text {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 24px;
+            }
+            .header {
+                padding: 30px 24px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="card header">
+            <div class="avatar">杉</div>
+            <h1>你好，我是 [你的名字]</h1>
+            <p class="subtitle">上海杉达学院 · 计算机科学与技术 · 大二在读</p>
+        </div>
+
+        <!-- 基本信息 -->
+        <div class="card">
+            <h2>基本信息</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">学校</div>
+                    <div class="info-value">上海杉达学院</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">专业</div>
+                    <div class="info-value">计算机科学与技术</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">年级</div>
+                    <div class="info-value">大二</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">所在地</div>
+                    <div class="info-value">上海</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 专业技能 -->
+        <div class="card">
+            <h2>专业技能</h2>
+            <div class="skills">
+                <span class="skill-tag">C 语言</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">数据结构与算法</span>
+                <span class="skill-tag">HarmonyOS / ArkTS</span>
+                <span class="skill-tag">前端基础</span>
+                <span class="skill-tag">AutoCAD</span>
+                <span class="skill-tag">Blender</span>
+                <span class="skill-tag">Layout 2022</span>
+                <span class="skill-tag">Office 办公</span>
+            </div>
+        </div>
+
+        <!-- 兴趣爱好 -->
+        <div class="card">
+            <h2>兴趣爱好</h2>
+            <ul class="interest-list">
+                <li><span class="icon">🏛️</span>中国古建筑与传统榫卯工艺，喜欢用 3D 软件建模还原传统工艺</li>
+                <li><span class="icon">🏀</span>NBA 球迷，凯里·欧文粉丝</li>
+                <li><span class="icon">📡</span>关注通信技术发展史与科技人物故事</li>
+                <li><span class="icon">📚</span>有明确的升学规划，持续提升专业能力</li>
+            </ul>
+        </div>
+
+        <!-- 关于我 -->
+        <div class="card">
+            <h2>关于我</h2>
+            <p class="intro-text">
+                我是上海杉达学院计算机科学与技术专业的大二学生。平时喜欢钻研编程技术，也对传统古建筑和榫卯工艺很感兴趣，
+                会用 3D 建模软件把这些传统工艺还原出来。学习上有自己的规划，希望能在计算机领域继续深造。
+                性格认真踏实，注重细节，喜欢把事情做好。
+            </p>
+        </div>
+    </div>
+</body>
+</html>
