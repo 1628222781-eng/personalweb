@@ -126,6 +126,44 @@
             margin-right: 10px;
         }
 
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-list li:last-child {
+            border-bottom: none;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: #f0f4ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-size: 20px;
+        }
+
+        .contact-info .contact-label {
+            font-size: 13px;
+            color: #95a5a6;
+        }
+
+        .contact-info .contact-value {
+            font-size: 16px;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
         .intro-text {
             color: #555;
             font-size: 15px;
@@ -208,6 +246,27 @@
                 <li><span class="icon">🏛️</span>中国古建筑与传统榫卯工艺，喜欢用 3D 软件建模还原传统工艺</li>
                 <li><span class="icon">📡</span>关注通信技术发展史与科技人物故事</li>
                 <li><span class="icon">📚</span>有明确的升学规划，持续提升专业能力</li>
+            </ul>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="card">
+            <h2>联系方式</h2>
+            <ul class="contact-list">
+                <li>
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-info">
+                        <div class="contact-label">电话</div>
+                        <div class="contact-value">18272992606</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-info">
+                        <div class="contact-label">微信</div>
+                        <div class="contact-value">Cc_Aa-nN0919</div>
+                    </div>
+                </li>
             </ul>
         </div>
 
